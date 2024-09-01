@@ -1,0 +1,52 @@
+.note-card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .note-title-container {
+    background-color: #f0f0f0; 
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+  }
+  
+  .note-title-container h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .note-card-buttons {
+    display: flex;
+    gap: 10px; /* Adds spacing between the buttons */
+  }
+  
+  .note-card-buttons .edit-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .note-card-buttons .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .note-card-buttons .edit-button:hover{
+    background-color: rgb(199, 122, 6);
+    color: black;
+  }
+  
+
+  
+  
+  
