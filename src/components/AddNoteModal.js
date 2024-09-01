@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './Modal.css';
 
 function AddNoteModal({ note, onSave, onClose }) {
-  const [title, setTitle] = useState(''); // State for note title
-  const [content, setContent] = useState(''); // State for note content
+  const [title, setTitle] = useState(''); 
+  const [content, setContent] = useState('');
 
-  // Populate form fields when editing a note
+ 
   useEffect(() => {
     if (note) {
       setTitle(note.title);
@@ -16,7 +16,7 @@ function AddNoteModal({ note, onSave, onClose }) {
     }
   }, [note]);
 
-  // Function to handle saving the note
+ 
   const handleSave = () => {
     if (title && content) {
       onSave({ title, content });
@@ -28,7 +28,7 @@ function AddNoteModal({ note, onSave, onClose }) {
   return (
     <div className="modal">
       <div className="modal-content">
-        <h2>{note ? 'Edit Note' : 'Add Note'}</h2> {/* Display appropriate header */}
+        <h2>{note ? 'Edit Note' : 'Add Note'}</h2> 
         <label>
           Title
           <input
@@ -47,7 +47,7 @@ function AddNoteModal({ note, onSave, onClose }) {
           />
         </label>
         <div className="modal-actions">
-          <button className="save" onClick={handleSave}>{note ? 'Update' : 'Save'}</button> {/* Change button text dynamically */}
+          <button className="save" onClick={handleSave}>{note ? 'Update' : 'Save'}</button> 
           <button className="cancel" onClick={onClose}>Cancel</button>
         </div>
       </div>

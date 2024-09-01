@@ -1,5 +1,5 @@
 import React from 'react';
-import './NoteCard.css'; // Importing the styles specific to the NoteCard component
+import './NoteCard.css'; 
 
 function NoteCard({ note, onDelete, onEdit }) {
   return (
@@ -10,7 +10,6 @@ function NoteCard({ note, onDelete, onEdit }) {
       
       <p>{note.content.substring(0, 100)}...</p>
       
-      {/* Buttons for editing and deleting */}
       <div className="note-card-buttons">
         <button className="edit-button" onClick={onEdit}>
           Edit
